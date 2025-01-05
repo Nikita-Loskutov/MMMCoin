@@ -23,7 +23,10 @@ body {
     margin-bottom: 20px;
     font-size: 1.5em;
     font-weight: bold;
+    user-select: none;
 }
+
+
 
 .stats {
     display: flex;
@@ -37,6 +40,7 @@ body {
     background: #292929;
     border-radius: 10px;
     padding: 3px;
+    user-select: none;
 }
 
 .stat-value {
@@ -70,6 +74,7 @@ body {
     font-weight: bold;
     margin: 30px 0 30px 0; /* Added top and bottom margin */
     color: white;
+    user-select: none;
 }
 .money{
     padding-right:2%;
@@ -84,7 +89,8 @@ body {
     border-radius: 6px;
     overflow: hidden;
     position: relative;
-}
+    user-select: none;
+    }
 
 .level-progress {
     height: 100%;
@@ -114,6 +120,10 @@ body {
     background-size: cover;
     border-radius: 50%;
     border: 5px solid #673ab7;
+    transition: transform 0.2s ease;
+    --tiltX: 0deg;
+    --tiltY: 0deg;
+    transform: rotateX(var(--tiltX)) rotateY(var(--tiltY));
 }
 
 .nav {
@@ -121,6 +131,7 @@ body {
     justify-content: space-between;
     margin-top: 20px;
     margin-bottom: 20px;
+    user-select: none;
 }
 
 .nav-button {
@@ -142,4 +153,24 @@ body {
 
 .nav-button:active {
     background-color: #444444;
+}
+
+/* Добавляем стили для анимации взлетающей цифры */
+.floating-plus-one {
+    position: absolute;
+    font-size: 30px;
+    color: #ef882b;
+    animation: float 1s ease-in-out;
+    user-select: none;
+}
+
+@keyframes float {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
 }
