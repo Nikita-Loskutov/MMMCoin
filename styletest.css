@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: -webkit-linear-gradient(90deg, #696969,#1d1b1d,#8d8688);
+    background: linear-gradient(90deg, #696969,#1d1b1d,#8d8688);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 360px;
+    background: #1e1e1e;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.header {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.stat {
+    margin:5px;
+    text-align: center;
+    background: #292929;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.stat-value {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: white;
+    padding-top:5px;
+}
+
+.stat-label {
+    font-size: 0.8em;
+    padding-left:5px;
+    padding-right:5px;
+    padding-top:5px;
+}
+#tap{
+    color:red;
+}
+#up{
+    color:purple;
+}
+#hourse{
+    color:green;
+}
+
+.coin {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 30px 0 30px 0; /* Added top and bottom margin */
+    color: white;
+}
+.money{
+    padding-right:2%;
+    width:60px;
+    height:60px;
+}
+.level-bar {
+    margin: 20px auto;
+    height: 12px;
+    width: 100%;
+    background-color: #555;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+}
+
+.level-progress {
+    height: 100%;
+    width: 100%; /* Adjust percentage based on level */
+    background: -webkit-linear-gradient(90deg, #f20707,#f58300,#11ff00,#14ad00);
+    background: linear-gradient(90deg, #f20707,#f58300,#11ff00,#14ad00);
+    transition: width 0.3s;
+}
+
+.level-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.hamster {
+    margin: 20px auto;
+    margin-top:30px;
+    margin-bottom:30px;
+    width: 250px;
+    height: 250px;
+    background: url('./assets/frog.png') no-repeat center center;
+    background-size: cover;
+    border-radius: 50%;
+    border: 5px solid #673ab7;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.nav-button {
+    flex: 1;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 0;
+    background: #292929;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.nav-button:hover {
+    background-color: #383838;
+}
+
+.nav-button:active {
+    background-color: #444444;
+}
